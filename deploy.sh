@@ -9,5 +9,7 @@ echo "Installing and starting app..."
 cd reddit
 bundle install
 
+puma -d
+
 echo "App port is"
 ps aux|grep puma
