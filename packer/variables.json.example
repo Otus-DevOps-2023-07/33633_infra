@@ -1,14 +1,5 @@
-variable "key_file" {
- type = string
- default = "/example/example.json"
-}
-
-variable "folder_id" {
- type = string
- default = "randomvalue"
-}
-
-variable "source_image_id" {
- type = string
- default = "ubuntu-1604-lts"
+{
+	"key_file": "some_path/key.json",
+	"folder_id": "some_id",
+	"source_image_family": "ubuntu-1604-lts"
 }
