@@ -1,5 +1,5 @@
 {
-	"key_file": "some_path/key.json",
-	"folder_id": "some_id",
-	"source_image_family": "ubuntu-1604-lts"
+ "key_file": "key.json.example",
+ "folder_id": "some_id",
+ "source_image_id": "ubuntu-1604-lts"
 }
