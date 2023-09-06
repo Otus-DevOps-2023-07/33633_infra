@@ -1,4 +1,4 @@
-cloud_id                 = "someid
+cloud_id                 = "someid"
 folder_id                = "someid"
 zone                     = "zone"
 public_key_path          = "pubkeypath"
