@@ -1,4 +1,1 @@
-terraform {
-  backend "s3" {
-  }
-}
+#yay tests
