@@ -1,0 +1,26 @@
+---
+- name: Install and start app
+  hosts: app
+  become: yes
+  tasks:
+    - name: Install git
+      apt:
+        name: git
+        state: present
+        update_cache: yes
+
+    - name: Get the latest version app
+      git:
+        repo: 'https://github.com/express42/reddit.git'
+        dest: /home/ubuntu/reddit
+        version: monolith
+      notify: reload puma
+
+    - name: Install app
+      bundler:
+        state: present
+        chdir: /home/ubuntu/reddit
+
+  handlers:
+  - name: reload puma
+    systemd: name=puma state=restarted
