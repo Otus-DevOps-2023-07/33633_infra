@@ -1,5 +1,5 @@
 {
-	"key_file": "packer/key.json.example"
+	"key_file": "packer/key.json.example",
 	"folder_id": "b1g",
         "source_image_id": "ubuntu-1604-lts"
 }
