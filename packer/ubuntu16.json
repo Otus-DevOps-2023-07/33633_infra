@@ -10,7 +10,7 @@
      "ssh_username": "ubuntu",
      "platform_id": "standard-v1",
      "zone": "ru-central1-a",
-     "subnet_id": "e9bd17vsvk1n3kmqtejd",
+     "subnet_id": "e9bqrfnm2ivvc7ipmv7a",
      "use_ipv4_nat": true
     }
   ],
