@@ -26,3 +26,6 @@ variable "service_account_key_file" {
 variable "private_key_path" {
   description = "Path to the private key for ssh access"
 }
+variable "token_id" {
+  description = "YC token"
+}
