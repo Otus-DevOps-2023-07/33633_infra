@@ -9,3 +9,5 @@ key.json
 *.retry
 provider.tf
 *.bak
+jdauphant.nginx
+vault.key
