@@ -5,6 +5,5 @@
     - app
     - jdauphant.nginx
 
-- import_playbook: base.yml
-- import_playbook: deploy.yml
-
+- import_playbook: playbooks/base.yml
+- import_playbook: playbooks/deploy.yml
