@@ -1,14 +1,10 @@
 ---
-- name: Install Ruby
-  hosts: all
+- hosts: app 
   become: yes
-  tasks:
-    - name: Install ruby and bundle
-      apt:
-        name: "{{item}}"
-        state: present
-        update_cache: yes
-      loop:
-        - ruby-full
-        - ruby-bundler
-        - build-essential
+  roles:
+    - app
+    - jdauphant.nginx
+
+- import_playbook: base.yml
+- import_playbook: deploy.yml
+
