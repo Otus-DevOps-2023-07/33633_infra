@@ -20,7 +20,7 @@ build_job:
 test_unit_job:
   stage: test
   services:
-    - mongo:4.6
+    - mongo:4
   script:
     - ruby simpletest.rb
 
